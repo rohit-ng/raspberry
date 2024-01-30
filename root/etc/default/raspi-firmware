@@ -1,0 +1,25 @@
+# Note that modifying this file DOES NOT automatically modify the boot
+# arguments used by your computer; this file is called only on
+# firmware or kernel upgrades. You should manually edit
+# /boot/firmware/cmdline.txt to match this file when any changes are
+# made, or run:
+#
+#      update-initramfs -u -k all
+#
+# in order to regenerate it.
+
+# Main baremetal application that is started by the firmware once the
+# hardware has been initialized. Usually, this is the Linux kernel but
+# this can also be u-boot or barebox launched as a second level
+# bootloader. Possibles values are "auto", so the kernel image will be
+# autodetected from /boot and started directly by the firmware, or the
+# name of the image to use from /boot/firmware
+#
+#KERNEL="auto"
+
+# Possibles values are "auto", so the initramfs image will be
+# autodetected from /boot and started directly by the firmware, "no"
+# to skip initramfs handling, or the name of the image to use from
+# /boot/firmware
+#
+#INITRAMFS="auto"
