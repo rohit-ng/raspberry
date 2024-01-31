@@ -1,4 +1,0 @@
-/etc/default/raspi-firmware
-/etc/initramfs/post-update.d/z50-raspi-firmware
-/etc/kernel/postinst.d/z50-raspi-firmware
-/etc/kernel/postrm.d/z50-raspi-firmware

@@ -1,8 +1,0 @@
-override ARCH = arm64
-override KERNELRELEASE = 6.1.0-rpi7-rpi-v8
-CCACHE = ccache
-CC = $(if $(DEBIAN_KERNEL_USE_CCACHE),$(CCACHE)) $(CROSS_COMPILE)gcc-12
-ifneq ($(DEB_BUILD_ARCH),$(DEB_HOST_ARCH))
-override CROSS_COMPILE = $(DEB_HOST_GNU_TYPE)-
-endif
-DEBIAN_KERNEL_NO_CC_VERSION_CHECK = y
